@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    max-width: 1400px; /* Fluid layout for larger screens */
+    min-width: 1000px; /* Minimum width for smaller screens */
+    margin: 0 auto; /* Center the content */
+    background-image: url('images/background.jpg'); /* Background image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Non-tiled background image */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex; /* Use flexbox for navigation */
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+/* Header Styles */
+header img.logo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Content and Text Styles */
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+p {
+    text-align: justify;
+    margin: 20px;
+}
+
+.content {
+    margin: 20px;
+    padding: 15px;
+    max-width: 800px;
+    min-width: 300px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Unordered List Styles */
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+/* Image Styles */
+.float-left {
+    float: left; /* Float image to the left */
+    margin-right: 20px;
+    border-radius: 15px; /* Rounded corners for images */
+}
+
+.clear {
+    clear: both; /* Clear floated elements */
+}
+
+/* Enhanced Layout Styles */
+.enhanced {
+    display: block;
+}
+
+/* Progressive Enhancement with Grid */
+@supports (display: grid) {
+    .enhanced {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two-column grid layout */
+        gap: 20px;
+    }
+}
+
+/* Relative and Absolute Positioning */
+.relative-box {
+    position: relative;
+    left: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/* Border and Box Styles */
+.box {
+    border: 2px solid #ccc;
+    padding: 10px;
+}
+
+.rounded {
+    border-radius: 15px; /* Rounded corners */
+}
